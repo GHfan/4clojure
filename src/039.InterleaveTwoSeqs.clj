@@ -1,0 +1,3 @@
+mapcat list
+
+;; mapcat vector
