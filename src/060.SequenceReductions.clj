@@ -2,7 +2,7 @@
   ([f coll]
    (sr f (first coll) (rest coll)))
   ([f v coll]
-   (lazy-seq 
+   (lazy-seq
     (if (empty? coll)
      (vector v)
      (cons v (sr f (f v (first coll)) (rest coll)))))))
